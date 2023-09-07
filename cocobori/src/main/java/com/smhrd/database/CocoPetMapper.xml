@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.smhrd.database.CocoPetMapper">
+	<!-- 강아지 정보 등록 -->
+	<insert id="insertDog" parameterType="CocoPet">
+		INSERT INTO tb_dog 
+		VALUES(#{pet_type}, 
+			   #{pet_breed},
+			   #{pet_pic}, 
+			   #{pet_adaptno},
+			   #{pet_adapt},
+			   #{pet_fitno},
+			   #{pet_fit},
+			   #{pet_affno},
+			   #{pet_aff},
+			   #{pet_healthno},
+			   #{pet_health},
+			   #{pet_trainno},
+			   #{pet_train},
+			   #{pet_actno},
+			   #{pet_act})
+	</insert>
+	
+	<!-- 고양이 정보 등록 -->
+	<insert id="insertCat" parameterType="CocoPet">
+		INSERT INTO tb_cat 
+		VALUES(#{pet_type}, 
+			   #{pet_breed},
+			   #{pet_pic}, 
+			   #{pet_affno},
+			   #{pet_aff},
+			   #{pet_actno},
+			   #{pet_act},
+			   #{pet_healthno},
+			   #{pet_health},
+			   #{pet_groomno},
+			   #{pet_groom})
+	</insert>
+	
+	<!-- 파충류 정보 등록 -->
+	<insert id="insertRep" parameterType="CocoPet">
+		INSERT INTO tb_rep 
+		VALUES(#{pet_type}, 
+			   #{pet_breed},
+			   #{pet_pic}, 
+			   #{pet_temp},
+			   #{pet_hum},
+			   #{pet_eat},
+			   #{pet_etc})
+	</insert>
+	
+	<!-- 조류 정보 등록 -->
+	<insert id="insertBird" parameterType="CocoPet">
+		INSERT INTO tb_bird 
+		VALUES(#{pet_type}, 
+			   #{pet_breed},
+			   #{pet_pic}, 
+			   #{pet_temp},
+			   #{pet_eat},
+			   #{pet_cage},
+			   #{pet_health},
+			   #{pet_adapt},
+			   #{pet_etc})
+	</insert>
+	
+	<!-- 강아지 품종 목록 조회 -->
+	<select id="selectDog" resultType="CocoPet" parameterType="CocoPet">
+		SELECT * FROM tb_dog WHERE pet_breed = #{pet_breed}
+	</select>
+	
+	<!-- 고양이 품종 목록 조회 -->
+	<select id="selectCat" resultType="CocoPet" parameterType="CocoPet">
+		SELECT * FROM tb_cat WHERE pet_breed = #{pet_breed}
+	</select>
+	
+	<!-- 파충류 품종 목록 조회 -->
+	<select id="selectRep" resultType="CocoPet" parameterType="CocoPet">
+		SELECT * FROM tb_rep WHERE pet_breed = #{pet_breed}
+	</select>
+	
+	<!-- 조류 품종 목록 조회 -->
+	<select id="selectBird" resultType="CocoPet" parameterType="CocoPet">
+		SELECT * FROM tb_bird WHERE pet_breed = #{pet_breed}
+	</select>
+	
+	<!-- 강아지 전체목록 조회 List -->
+	<select id="selAllDog" resultType="Cocopet">
+		SELECT * FROM tb_dog ORDER BY pet_breed
+	</select>
+	
+	<!-- 고양이 전체목록 조회 List -->
+	<select id="selAllCat" resultType="Cocopet">
+		SELECT * FROM tb_cat ORDER BY pet_breed
+	</select>
+	
+	<!-- 파충류 전체목록 조회 List -->
+	<select id="selAllRep" resultType="Cocopet">
+		SELECT * FROM tb_rep ORDER BY pet_breed
+	</select>
+	
+	<!-- 파충류 전체목록 조회 List -->
+	<select id="selAllBird" resultType="Cocopet">
+		SELECT * FROM tb_bird ORDER BY pet_breed
+	</select>
+	
+
+</mapper>

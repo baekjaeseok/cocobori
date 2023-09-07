@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smhrd.database.CocoBoardMapper">
+
+	<!-- 게시물 등록 -->
+	<insert id="boardUpload" parameterType="CocoBoard">
+		insert into TB_BOARD values(num_board.nextval,#{b_content},
+				#{b_file}, sysdate, #{user_email},0, 0)
+	</insert>
+	
+	<!-- 게시글 조회  -->
+	<select id="showBoard" resultType="CocoBoard">
+		select * from TB_BOARD order by uploaded_at desc
+	</select>
+	
+	<!-- 게시글 세부 조회 -->
+	<select id="detail_showBoard" resultType="CocoBoard" parameterType="CocoBoard">
+		select * from TB_BOARD where b_seq = #{b_seq} 
+	</select>
+	
+	<!-- 게시글 수정 -->
+	<update id="boardModify"  parameterType="CocoBoard">
+		update TB_BOARD 
+		set   b_content=#{b_content}, b_file=#{b_file}
+		where b_seq = #{b_seq} 
+	</update>
+	
+	<!-- 게시글 삭제 -->
+	<delete id="boardDelete" parameterType="CocoBoard">
+		DELETE FROM TB_BOARD WHERE b_seq=#{b_seq}
+	</delete>
+	
+	<!-- 내용 검색 -->
+	<select id="searchContent"
+			parameterType="CocoBoard"
+			resultType="CocoBoard">
+		SELECT * FROM TB_BOARD WHERE b_content LIKE '%'||#{b_content}||'%' ORDER BY uploaded_at DESC
+	</select>
+	
+	<!-- 글쓴이 검색 -->
+	<select id="searchWriter"
+			parameterType="CocoBoard"
+			resultType="CocoBoard">
+		SELECT * FROM TB_BOARD WHERE user_email LIKE '%'||#{user_email}||'%' ORDER BY uploaded_at DESC
+	</select>
+</mapper>

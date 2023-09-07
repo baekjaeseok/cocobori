@@ -1,0 +1,234 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+     <servlet-name>Ex_page</servlet-name>
+     <display-name>Ex_page</display-name>
+     <description></description>
+     <servlet-class>com.smhrd.controller.Ex_page</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LoginService</servlet-name>
+  	<display-name>LoginService</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.LoginService</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LogoutService</servlet-name>
+  	<display-name>LogoutService</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.LogoutService</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>JoinService</servlet-name>
+  	<display-name>JoinService</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.JoinService</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteService</servlet-name>
+  	<display-name>DeleteService</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.DeleteService</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>FrontController</servlet-name>
+  	<display-name>FrontController</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.frontcontroller.FrontController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UpdateService</servlet-name>
+  	<display-name>UpdateService</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.UpdateService</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>MemberDeleteService</servlet-name>
+  	<display-name>MemberDeleteService</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.MemberDeleteService</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ChatService</servlet-name>
+  	<display-name>ChatService</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.ChatService</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteBoardService</servlet-name>
+  	<display-name>DeleteBoardService</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.DeleteBoardService</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UpdateBoardService</servlet-name>
+  	<display-name>UpdateBoardService</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.UpdateBoardService</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>WriteBoardService</servlet-name>
+  	<display-name>WriteBoardService</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.WriteBoardService</servlet-class>
+  </servlet>
+  
+  
+  <!-- 백재석 -->
+  <servlet>
+  	<servlet-name>InsertDog</servlet-name>
+  	<display-name>InsertDog</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.InsertDog</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SelectDog</servlet-name>
+  	<display-name>SelectDog</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.SelectDog</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>InsertCat</servlet-name>
+  	<display-name>InsertCat</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.InsertCat</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SelectCat</servlet-name>
+  	<display-name>SelectCat</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.SelectCat</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>resetPet</servlet-name>
+  	<display-name>resetPet</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.resetPet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>InsertRep</servlet-name>
+  	<display-name>InsertRep</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.InsertRep</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SelectRep</servlet-name>
+  	<display-name>SelectRep</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.SelectRep</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>InsertBird</servlet-name>
+  	<display-name>InsertBird</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.InsertBird</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SelectBird</servlet-name>
+  	<display-name>SelectBird</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.SelectBird</servlet-class>
+  </servlet>
+  
+  
+  
+  
+  
+  
+
+  <servlet-mapping>
+     <servlet-name>Ex_page</servlet-name>
+     <url-pattern>/Ex_page</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LoginService</servlet-name>
+  	<url-pattern>/LoginService</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LogoutService</servlet-name>
+  	<url-pattern>/LogoutService</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>JoinService</servlet-name>
+  	<url-pattern>/JoinService</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteService</servlet-name>
+  	<url-pattern>/DeleteService</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>FrontController</servlet-name>
+  	<url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateService</servlet-name>
+  	<url-pattern>/UpdateService</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>MemberDeleteService</servlet-name>
+  	<url-pattern>/MemberDeleteService</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ChatService</servlet-name>
+  	<url-pattern>/ChatService</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteBoardService</servlet-name>
+  	<url-pattern>/DeleteBoardService</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateBoardService</servlet-name>
+  	<url-pattern>/UpdateBoardService</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>WriteBoardService</servlet-name>
+  	<url-pattern>/WriteBoardService</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  <!-- 백재석 -->
+   <servlet-mapping>
+  	<servlet-name>InsertDog</servlet-name>
+  	<url-pattern>/InsertDog</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SelectDog</servlet-name>
+  	<url-pattern>/SelectDog</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>InsertCat</servlet-name>
+  	<url-pattern>/InsertCat</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SelectCat</servlet-name>
+  	<url-pattern>/SelectCat</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>resetPet</servlet-name>
+  	<url-pattern>/resetPet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>InsertRep</servlet-name>
+  	<url-pattern>/InsertRep</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SelectRep</servlet-name>
+  	<url-pattern>/SelectRep</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>InsertBird</servlet-name>
+  	<url-pattern>/InsertBird</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SelectBird</servlet-name>
+  	<url-pattern>/SelectBird</url-pattern>
+  </servlet-mapping>
+
+</web-app>

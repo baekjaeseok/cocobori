@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<!-- 환경설정(계정, driver, url, ... -->
+	<properties resource="com/smhrd/database/db.properties"></properties>
+		<typeAliases>
+			<typeAlias type="com.smhrd.model.CocoBoardDTO" alias="CocoBoard"/>
+			<typeAlias type="com.smhrd.model.CocoChattingDTO" alias="CocoChatting"/>
+			<typeAlias type="com.smhrd.model.CocoCommentDTO" alias="CocoComment"/>
+			<typeAlias type="com.smhrd.model.CocoFriendDTO" alias="CocoFriend"/>
+			<typeAlias type="com.smhrd.model.CocoMemberDTO" alias="CocoMember"/>
+			<typeAlias type="com.smhrd.model.CocoPetDTO" alias="CocoPet"/>
+			<typeAlias type="com.smhrd.model.CocoQuestionDTO" alias="CocoQuestion"/>
+		</typeAliases>
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="${driver}" />
+				<property name="url" value="${url}" />
+				<property name="username" value="${user}" />
+				<property name="password" value="${password}" />
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+		<mapper resource="com/smhrd/database/CocoMemberMapper.xml" />
+		<mapper resource="com/smhrd/database/CocoBoardMapper.xml" />
+		<mapper resource="com/smhrd/database/CocoFriendMapper.xml" />
+		<mapper resource="com/smhrd/database/CocoChatMapper.xml" />
+		<mapper resource="com/smhrd/database/CocoPetMapper.xml" />
+		<mapper resource="com/smhrd/database/CocoQuestionMapper.xml" />
+	</mappers>
+</configuration>
