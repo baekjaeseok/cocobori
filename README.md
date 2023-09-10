@@ -15,6 +15,9 @@
 #### 구현
 * 회원가입, 로그인, 로그아웃, 회원정보수정
 ![coco_login](https://github.com/baekjaeseok/cocobori/assets/133929822/d3fcbf7d-9ccc-4161-acf3-a7b45c08e44f)
+
 * 게시물 등록, 수정, 삭제
 ![coco_up1](https://github.com/baekjaeseok/cocobori/assets/133929822/a40f54ab-2156-4efc-9a2e-b2db48c42c78)
 
+* 게시물 검색
+![coco_up2](https://github.com/baekjaeseok/cocobori/assets/133929822/3339552e-7ae8-4dbe-a848-53d76c29ea17)
