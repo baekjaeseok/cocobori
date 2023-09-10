@@ -21,3 +21,6 @@
 
 * 게시물 검색
 ![coco_up2](https://github.com/baekjaeseok/cocobori/assets/133929822/3339552e-7ae8-4dbe-a848-53d76c29ea17)
+
+* 친구 팔로우, 채팅
+![coco_friend](https://github.com/baekjaeseok/cocobori/assets/133929822/66d60090-2808-4787-9af7-345daa055929)
