@@ -23,6 +23,7 @@
 ![coco_up2](https://github.com/baekjaeseok/cocobori/assets/133929822/3339552e-7ae8-4dbe-a848-53d76c29ea17)
 
 * 친구 팔로우, 채팅
+![coco_friend](https://github.com/baekjaeseok/cocobori/assets/133929822/63d33722-b04c-463a-a9bf-3eb853377642)
 
 * 반려동물 백과사전
 ![coco_dic](https://github.com/baekjaeseok/cocobori/assets/133929822/bea9166d-af39-407e-a217-0dbc888349d2)
