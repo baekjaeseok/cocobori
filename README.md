@@ -6,7 +6,9 @@
 - Java / JavaScript / Ajax
 - HTML / CSS / JSP
 - Oracle DB
+- Apache Tomcat v8.5
 - Kakao 지도 API
+- Github
 #### 담당
 - 커뮤니티 : 게시물 등록, 수정, 삭제, 검색
 - 친구 : 팔로우, 채팅
