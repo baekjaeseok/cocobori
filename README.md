@@ -16,5 +16,5 @@
 * 회원가입, 로그인, 로그아웃, 회원정보수정
 ![coco_login](https://github.com/baekjaeseok/cocobori/assets/133929822/d3fcbf7d-9ccc-4161-acf3-a7b45c08e44f)
 * 게시물 등록, 수정, 삭제
-![제목 없는 동영상 - Clipchamp로 제작](https://github.com/baekjaeseok/cocobori/assets/133929822/71eee9e7-6985-4ad8-bbfc-c42c3c95e688)
+![coco_up1](https://github.com/baekjaeseok/cocobori/assets/133929822/a40f54ab-2156-4efc-9a2e-b2db48c42c78)
 
